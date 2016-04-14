@@ -46,7 +46,7 @@ if __name__ == '__main__':
     domain_name=sys.argv[1]
     for i in range(int(sys.argv[2])): 
         t = threading.Thread(target=scaner)
-        t.setDaemon(True)
+        #t.setDaemon(True)
         t.start()
 
     t.join()
